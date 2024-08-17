@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.title{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cell:hover {
+  background-color: #282c34;
+  transform: scale(1.05);
+}
+
+.game-result {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.reset-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+.top {
+  color: white;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
